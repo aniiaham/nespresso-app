@@ -1,7 +1,7 @@
 import { Coffee, columns } from "./columns";
 import { DataTable } from "./data-table";
 
-async function getData(): Promise<Coffee[]> {
+async function getDataVertuo(): Promise<Coffee[]> {
   // Fetch data from your API here.
   return [
     {
@@ -367,8 +367,9 @@ async function getData(): Promise<Coffee[]> {
   ];
 }
 
-export default async function DemoPage() {
-  const data = await getData();
+
+export default async function NespressoVertuoPage() {
+  const data = await getDataVertuo();
 
   return (
     <div className="container mx-auto py-10">

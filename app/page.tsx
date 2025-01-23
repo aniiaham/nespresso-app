@@ -1,9 +1,9 @@
-import DemoPage from "./payments/page";
+import NespressoVertuoPage from "./payments/vertuo-page";
 
 export default function Home() {
   return (
     <div>
-      <DemoPage />
+      <NespressoVertuoPage />
     </div>
   );
 }
