@@ -1,5 +1,5 @@
-import { Coffee, columns } from "./columns";
-import { DataTable } from "./data-table";
+import { Coffee, columns } from "../shared/columns";
+import { DataTable } from "../shared/data-table";
 
 async function getDataOriginal(): Promise<Coffee[]> {
   // Fetch data from your API here.
