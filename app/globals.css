@@ -14,7 +14,6 @@ body {
 
 @layer base {
   :root {
-    --background: 40 64% 92%;
     --foreground: 240 10% 3.9%;
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
@@ -39,6 +38,7 @@ body {
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
+    --card-color: 109 11% 53%;
   }
   .dark {
     --background: 240 10% 3.9%;

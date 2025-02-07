@@ -40,6 +40,10 @@ const config: Config = {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
         },
+        cardcolor: {
+          DEFAULT: "hsl(var(--card-color))",
+          foreground: "hsl(var(--card-color))",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
