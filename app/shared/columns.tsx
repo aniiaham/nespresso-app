@@ -17,12 +17,12 @@ import Link from "next/link";
 // This type is used to define the shape of our data.
 // You can use a Zod schema here if you want.
 export type Coffee = {
-    name: string;
-    type: string;
-    size: string;
-    profile: string;
-    roast: string;
-    caffeine: string;
+  name: string;
+  type: string;
+  size: string;
+  profile: string;
+  roast: string;
+  caffeine: string;
 };
 
 export const columns: ColumnDef<Coffee>[] = [
@@ -124,9 +124,20 @@ export const columns: ColumnDef<Coffee>[] = [
           <DropdownMenuContent align="end">
             <DropdownMenuLabel>Actions</DropdownMenuLabel>
             <DropdownMenuItem>
-              <Link href={""}>Buy from Nespresso</Link>
+              <Link href={"https://www.nespresso.com/us/en"}>
+                Buy from Nespresso
+              </Link>
             </DropdownMenuItem>
             <DropdownMenuSeparator />
+            <DropdownMenuItem>
+              <Link
+                href={
+                  "https://www.amazon.com/s?k=nespresso&i=garden&crid=27QI7WEAL3BDC&sprefix=nes%2Cgarden%2C144&ref=nb_sb_ss_p13n-pd-dpltr-ranker_2_3"
+                }
+              >
+                Buy from Amazon
+              </Link>
+            </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
       );
