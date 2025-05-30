@@ -9,7 +9,6 @@ export default function Home() {
   return (
     <section className="h-full bg-background w-full flex flex-col justify-center items-center">
       <div className="relative min-h-screen my-28 p-4 text-center font-sans overflow-hidden">
-        {/* Hero Section */}
         <header className="py-5 relative z-10">
           <h1 className="text-4xl font-bold tracking-wide">
             Nespresso Caffeine Chart
@@ -51,11 +50,6 @@ export default function Home() {
             Nespresso coffee pods, comparing caffeine content, flavor profiles,
             and roast intensities.
           </p>
-          {/* <p className="text-coffee-brown text-lg leading-relaxed">
-            Discover your next favorite coffee, learn about the different
-            blends, and make informed decisions based on your taste preferences
-            and caffeine needs.
-          </p> */}
         </section>
         <footer className="text-black py-4 mt-8 relative z-10">
           <p className="text-center">
