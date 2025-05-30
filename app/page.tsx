@@ -11,12 +11,10 @@ export default function Home() {
       <div className="relative min-h-screen my-28 p-4 text-center font-sans overflow-hidden">
         {/* Hero Section */}
         <header className="py-5 relative z-10">
-          <h1 className="text-4xl font-bold  tracking-wide">
+          <h1 className="text-4xl font-bold tracking-wide">
             Nespresso Caffeine Chart
           </h1>
         </header>
-
-        {/* Browse Section */}
         <div className="flex justify-center gap-8 my-10 relative z-10">
           <Link
             href={{
@@ -43,15 +41,11 @@ export default function Home() {
               alt="Original Pods"
               className="w-60 h-60 object-cover rounded-md"
             />
-            <h2 className="text-xl font-medium mb-2 text-coffee-dark">
-              Original Line
-            </h2>
+            <h2 className="text-xl font-medium mb-2">Original Line</h2>
           </Link>
         </div>
-
-        {/* About Section */}
         <section className="p-8 max-w-2xl mx-auto text-left relative z-10">
-          <h2 className="text-3xl font-bold text-coffee-dark mb-4">About</h2>
+          <h2 className="text-3xl font-bold mb-4">About</h2>
           <p className="text-coffee-brown mb-4 text-lg leading-relaxed">
             Nespresso caffeine chart helps you explore the wide variety of
             Nespresso coffee pods, comparing caffeine content, flavor profiles,
