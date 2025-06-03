@@ -19,7 +19,7 @@ export default function Home() {
             href={{
               pathname: "/vertuo-line",
             }}
-            className="p-4 hover:scale-105 transition cursor-pointer"
+            className="md:p-4 hover:scale-105 transition cursor-pointer"
           >
             <Image
               src={VertuoImg}
@@ -33,7 +33,7 @@ export default function Home() {
             href={{
               pathname: "/original-line",
             }}
-            className="p-4 hover:scale-105 transition cursor-pointer"
+            className="md:p-4 hover:scale-105 transition cursor-pointer"
           >
             <Image
               src={OriginalImg}
@@ -43,7 +43,7 @@ export default function Home() {
             <h2 className="text-xl font-medium mb-2">Original Line</h2>
           </Link>
         </div>
-        <section className="p-8 max-w-2xl mx-auto text-left relative z-10">
+        <section className="md:p-8 max-w-2xl mx-auto text-left relative z-10">
           <h2 className="text-3xl font-bold mb-4">About</h2>
           <p className="text-coffee-brown mb-4 text-lg leading-relaxed">
             Nespresso caffeine chart helps you explore the wide variety of
