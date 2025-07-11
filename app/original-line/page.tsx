@@ -1,8 +1,8 @@
 import { Coffee, columns } from "../shared/columns";
 import { DataTable } from "../shared/data-table";
+import Script from "next/script";
 
 async function getDataOriginal(): Promise<Coffee[]> {
-  // Fetch data from your API here.
   return [
     {
       name: "Caramello",
@@ -306,9 +306,55 @@ async function getDataOriginal(): Promise<Coffee[]> {
 export default async function NespressoOriginalPage() {
   const data = await getDataOriginal();
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Nespresso Original Coffee Pods",
+    itemListElement: data.map((pod, index) => ({
+      "@type": "Product",
+      position: index + 1,
+      name: pod.name,
+      brand: {
+        "@type": "Brand",
+        name: "Nespresso",
+      },
+      description: `${pod.profile}. ${pod.roast} with about ${pod.caffeine} caffeine.`,
+      additionalProperty: [
+        {
+          "@type": "PropertyValue",
+          name: "Type",
+          value: pod.type,
+        },
+        {
+          "@type": "PropertyValue",
+          name: "Size",
+          value: pod.size,
+        },
+      ],
+      offers: {
+        "@type": "Offer",
+        availability: "https://schema.org/InStock",
+      },
+    })),
+  };
+
   return (
     <div className="container mx-auto py-10">
+      <header className="py-6 relative z-10 max-w-3xl mx-auto flex flex-col items-center gap-2 text-center">
+        <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900">
+          Nespresso Original Caffeine Chart
+        </h1>
+        <p className="text-base md:text-lg text-gray-600">
+          Use this Original line caffeine chart to compare and filter Nespresso
+          pods by caffeine, roast, origin, and flavor.
+        </p>
+      </header>
       <DataTable columns={columns} data={data} />
+      <Script
+        id="structured-data-original"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
     </div>
   );
 }

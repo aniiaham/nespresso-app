@@ -9,10 +9,14 @@ export default function Home() {
   return (
     <section className="h-full bg-background w-full flex flex-col justify-center items-center">
       <div className="relative min-h-screen my-28 p-4 text-center font-sans overflow-hidden">
-        <header className="py-5 relative z-10">
+        <header className="py-5 relative z-10 max-w-xl mx-auto flex flex-col gap-4">
           <h1 className="text-4xl font-bold tracking-wide">
             Nespresso Caffeine Chart
           </h1>
+          <h2>
+            Find detailed information for every Nespresso coffee pod and choose
+            your preferred line below:
+          </h2>
         </header>
         <div className="flex justify-center gap-8 my-10 relative z-10">
           <Link
@@ -26,7 +30,9 @@ export default function Home() {
               alt="Vertuo Pod"
               className="w-60 h-60 object-cover rounded-md"
             />
-            <h2 className="text-xl font-medium mb-2 text-black">Vertuo Line</h2>
+            <h3 className="text-xl font-medium mb-2 text-black">
+              Browse Vertuo Pods
+            </h3>
           </Link>
 
           <Link
@@ -40,15 +46,16 @@ export default function Home() {
               alt="Original Pods"
               className="w-60 h-60 object-cover rounded-md"
             />
-            <h2 className="text-xl font-medium mb-2">Original Line</h2>
+            <h3 className="text-xl font-medium mb-2">Browse Original Pods</h3>
           </Link>
         </div>
-        <section className="md:p-8 max-w-2xl mx-auto text-left relative z-10">
-          <h2 className="text-3xl font-bold mb-4">About</h2>
-          <p className="text-coffee-brown mb-4 text-lg leading-relaxed">
-            Nespresso caffeine chart helps you explore the wide variety of
-            Nespresso coffee pods, comparing caffeine content, flavor profiles,
-            and roast intensities.
+        <section className="max-w-2xl mx-auto px-4 py-10 text-center border-t border-gray-200">
+          <h2 className="text-2xl font-semibold mb-3">About This Chart</h2>
+          <p className="text-base text-gray-700 leading-relaxed">
+            This Nespresso caffeine chart makes it easy to find and compare pods
+            by caffeine level, roast intensity, and flavor profile. Use it to
+            explore different Nespresso coffee lines and pick the perfect pod
+            for your taste and energy needs.
           </p>
         </section>
         <footer className="text-black py-4 mt-8 relative z-10">
