@@ -344,9 +344,9 @@ export default async function NespressoOriginalPage() {
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900">
           Nespresso Original Caffeine Chart
         </h1>
-        <p className="text-base md:text-lg text-gray-600">
-          Use this Original line caffeine chart to compare and filter Nespresso
-          pods by caffeine, roast, origin, and flavor.
+        <p className="text-base md:text-lg text-gray-600 mx-2">
+          Use this caffeine chart to compare and filter Nespresso pods by
+          caffeine, roast, and flavor.
         </p>
       </header>
       <DataTable columns={columns} data={data} />

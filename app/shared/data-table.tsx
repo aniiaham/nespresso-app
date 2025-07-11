@@ -68,14 +68,14 @@ export function DataTable<TData, TValue>({
 
   return (
     <div className="px-4">
-      <div className="flex items-center py-4">
+      <div className="flex items-center py-4 ">
         <Input
           placeholder="Filter names..."
           value={(table.getColumn("name")?.getFilterValue() as string) ?? ""}
           onChange={(event) =>
             table.getColumn("name")?.setFilterValue(event.target.value)
           }
-          className="max-w-sm"
+          className="max-w-sm mr-2"
         />
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
