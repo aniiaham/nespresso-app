@@ -406,7 +406,7 @@ export default async function NespressoVertuoPage() {
   return (
     <div className="container mx-auto py-10">
       <header className="py-6 relative z-10 max-w-3xl mx-auto flex flex-col items-center gap-2 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900">
+        <h1 className="text-4xl md:text-5xl mx-2 font-bold tracking-tight text-gray-900">
           Nespresso Vertuo Caffeine Chart
         </h1>
         <p className="text-base md:text-lg text-gray-600 mx-2">
